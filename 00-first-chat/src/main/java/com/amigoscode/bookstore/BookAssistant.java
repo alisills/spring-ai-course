@@ -20,7 +20,7 @@ public class BookAssistant {
 
 	public BookAssistant(ChatClient.Builder chatClientBuilder) {
 		// TODO task-2: build a ChatClient from the builder Spring AI gives you
-		this.chatClient = null;
+		this.chatClient = chatClientBuilder.build();
 	}
 
 	/**
