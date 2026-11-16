@@ -28,7 +28,7 @@ public class BookAssistant {
 	 */
 	public String ask(String question) {
 		// TODO task-3: send the question as a user message and return the answer text
-		throw new UnsupportedOperationException("TODO task-3");
+		return(chatClient.prompt().user(question).call().content());
 	}
 
 	/**
